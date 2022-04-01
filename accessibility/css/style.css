@@ -1,0 +1,24 @@
+h1 {
+    font-family: 'Helvetica';
+    color: blue;
+    background-color: #eee; /*dark gray*/
+  }
+
+  img {
+    max-width: 300px;
+    border-radius: 15px;
+  }
+
+  strong {
+    font-style: normal;
+    text-decoration: underline;
+  }
+
+  /* CSS */
+.highlighted { 
+  background-color: yellow;
+}
+
+.media {
+  background-color: blue;
+}
