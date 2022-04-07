@@ -1,3 +1,73 @@
+
+h1 {
+  color: blue;
+}
+
+/* .alert {
+  color: purple;
+  font-weight: bold;
+  font-size: 2em;
+} */
+
+/* .success {
+  color: green;
+} */
+
+/* #firstparagraph {
+  color: blue;
+  font-weight: bold;
+} */
+
+/* h2, .alert, #navbar { 
+  font-weight: bold;
+  color: yellow;
+} 
+
+/* p.alert { } applied to <p> AND .alert */
+/* .alert.success {
+  color: purple;
+  font-weight: bold;
+  font-size: 2em;
+} applied to .alert AND .success */
+
+/* header p {
+  font-size: 3em;
+  color: orange;
+ } */
+
+ /* header > p {
+  font-size: 3em;
+  color: orange;
+ } */
+
+ /* a:focus, a:hover {
+   font-size: 2em;
+  } applied to element on focus or hover */
+
+/* a:nth-child(2n +1 ) {
+    color: purple;
+  }
+
+  p:nth-child(2n) {
+    background-color: green;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Q1 */
 /* .alert.success {
   color: yellow;
@@ -6,11 +76,11 @@
   color: yellow;
 } */
 /* .alert, .success {
-  color: yellow
-} */
+  color: yellow */
+/* } */
 /* .alert--.success {
   color: yellow
-} */
+}
 
 
 
@@ -23,9 +93,23 @@
 
 
 /* Q3 */
-/* .blue { color: blue; } */
-/* p { color: gray; } */
-/* #red p.blue { color: red; } */
-/* #red .blue { color: magenta; } */
-/* .green p { color: lightgreen; } */
-/* div.green p.blue { color: cyan; } */
+/* .blue { color: blue; }
+p { color: gray; }
+p.blue { color: red; }
+#red .blue { color: magenta; }
+.green p { color: lightgreen; }
+div.green p.blue { color: cyan; } */
+
+nav a:hover, nav a:focus {
+  font-size: 2em;
+}
+
+nav li:nth-child(2n) {
+  color:green;
+  background-color: yellow;
+}
+
+nav li:nth-child(2n) a {
+  color:green;
+  background-color: red;
+}
