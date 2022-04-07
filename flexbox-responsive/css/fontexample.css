@@ -1,0 +1,23 @@
+.text {
+	font-size: 12px;
+}
+ 
+p {
+    font-family: 'Helvetica';
+    /* font-family: "dont have", "dont have 2", sans-serif; */
+    /* font-family: 'Roboto', 'Helvetica', sans-serif; */
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+li {
+    /* display: inline-block; */
+    
+
+    width: 100px;
+    /* border: 5px solid rebeccapurple; */
+    /* padding: 2em; */
+    /* padding:1em 2em 2em 1em; */
+    /* padding-bottom:2em; */
+    /* margin: 2em; */
+}
