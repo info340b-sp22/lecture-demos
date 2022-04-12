@@ -2,25 +2,65 @@
   box-sizing: border-box;
 }
 
-/* on devices 768px OR WIDER */
-@media (min-width: 768px)
-{
-  .row { /* row is a flexbox container */
-      display: flex;
-      flex-wrap: wrap; /* wrap extra items to the next "line" */
+.boxes {
+  display: flex;
+  background-color: rebeccapurple;
+  flex-wrap: wrap;
+}
+
+.boxes div {
+  background-color: orange;
+  border: 5px solid rebeccapurple;
+  padding: .25em;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+li {
+  display: inline-block;
+  background-color: lightseagreen;
+  padding: 10;
+  border: 1px solid black;
+}
+
+
+
+/* On a larger screen, use a green background and on swap the buttons to white */
+/* In here will apply at >768 */
+
+/* @media (min-width: 768px) {
+
+  body {
+    background-color: greenyellow;
   }
 
-  .column  { /* column is a flexbox item */
-      background-color: orange;
-      border: 5px solid rebeccapurple;
-
-      flex-basis: 50%; /* columns take up 50% of parent by default */
-      /* flex-grow: 1; */
+  button {
+    background-color: white;
   }
 }
 
-@media (min-width: 1200px) {
-  .column {
-      flex-basis: 33%; /* columns are automatically sized based on content */
+@media (min-width:1200px) {
+  body {
+    padding: 0 3em;
   }
-}
+
+  .boxes div {
+    flex-basis: 33%
+  }
+
+} */
+
+/* .real-content {
+  display:none;
+} */
+
+/*small screens*/
+/* @media (min-width:568px) {
+  .real-content {
+      display:block;
+  }
+
+  .warning {
+      display:none;
+  }
+} */

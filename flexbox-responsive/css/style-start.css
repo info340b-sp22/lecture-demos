@@ -1,65 +1,66 @@
 * {
     box-sizing: border-box;
-}
-
-.boxes {
+  }
+  
+  .boxes {
     display: flex;
     background-color: rebeccapurple;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-}
-
-.boxes div {
+  }
+  
+  .boxes div {
     background-color: orange;
     border: 5px solid rebeccapurple;
     padding: .25em;
     flex-basis: 50%;
     flex-grow: 1;
-}
-
-
-li {
+  }
+  
+  li {
     display: inline-block;
-    padding: 50;
-    border: 1px solid black ;
-}
-
-/* On a larger screen, use a green background and on swap the buttons to white */
-/* In here will apply at >768 */
-
-/* @media (min-width: 768px) {
-    
+    background-color: lightseagreen;
+    padding: 10;
+    border: 1px solid black;
+  }
+  
+  
+  
+  /* On a larger screen, use a green background and on swap the buttons to white */
+  /* In here will apply at >768 */
+  
+  /* @media (min-width: 768px) {
+  
     body {
-        background-color:greenyellow;
+      background-color: greenyellow;
     }
-
+  
     button {
-        background-color: white;
+      background-color: white;
     }
-} */
-
-/* @media (min-width:1200px) {
+  }
+  
+  @media (min-width:1200px) {
     body {
-        padding: 0 3em;
+      padding: 0 3em;
     }
-    
+  
     .boxes div {
-        flex-basis: 33%
+      flex-basis: 33%
     }
-
-}
-
-.real-content {
+  
+  } */
+  
+  /* .real-content {
     display:none;
-} */
-
-/*small screens*/
-/* @media (min-width:568px) {
+  } */
+  
+  /*small screens*/
+  /* @media (min-width:568px) {
     .real-content {
         display:block;
     }
-
+  
     .warning {
         display:none;
     }
-} */
+  } */
