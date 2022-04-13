@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box;
 }
-
+img {
+  width: 300px;
+} 
 
 /* Example 1 */ 
-.card {
+/* .card {
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 1em;
 }
 
-img {
-  width: 300px;
-}
+
 
 /* Example 2 */
 
