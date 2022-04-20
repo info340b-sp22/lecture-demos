@@ -1,7 +1,7 @@
 
 'use strict'
 
-// console.log("hello world!"); //prints 
+console.log("hello world!"); //prints 
 
 
 // let x = 'hello';
@@ -11,15 +11,28 @@
 
 // let hourSlept;
 // console.log(hourSlept);
+const myArray = [1, 2, 3, 4]
+for (let i=0; i < myArray.length; i++)  
+{
+    console.log(myArray[i])
+}
+
+for(let theItem of myArray) { //or loop through array items 
+    console.log(theItem)
+  }
+// const x = 4;
+// x = 5; // TypeError: Assignment to constant variable.
+
+// let y = 1.5;
+// y = 2; // ok!
 
 
-
-
-
-
-
-
-
+// const dinnerOptions = [
+//     ['chicken', 'mashed potatoes', 'mixed veggies'],
+//     ['steak', 'seasoned potatoes', 'asparagus'],
+//     ['fish', "rice", 'green beans'],
+//     ['portobello steak', 'rice', 'green beans']
+// ];
 
 // const agesObj = {sara:42, amit:35, zhang:13};
 // console.log("object:", agesObj);
