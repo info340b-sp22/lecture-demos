@@ -2,7 +2,7 @@
 
 const data = {value: 'index'};
 
-//normal function declaration
+// // normal function declaration
 // const foo = function(params) {
 //     return 'foo '+params;
 //   }
@@ -11,12 +11,14 @@ const data = {value: 'index'};
 //     return 'foo '+params;
 //   }
 
+//   const foo = (params) => 'foo '+params;  
+
 // // concise body
 // const foo = (params) => 'foo '+params;
   
 //   console.log(foo("parameter1, parameter2"));
 
-// concise body
+// // concise body
 // const foo = () => 'foo ';
   
 //   console.log(foo("parameter1, parameter2"));
@@ -34,24 +36,35 @@ const data = {value: 'index'};
 //     console.log("clicky");
 // })
 
-// const myArray = [1, 2, 3];
+// const myArray = [1, 2, 3, 4, 5];
 // const [x, y, z] = myArray; //myArray elements to `x`, `y`, `z`
 // console.log(x); //=> 1;
 // console.log(y); //=> 2;
 // console.log(z); //=> 3;
 
 // //destructuring objects
-// const myObject = {a: 1, b: 2, c: 3};
+const myObject = {a: 1, b: 2, c:3, d:4};
 // const {a, b, c} = myObject; //myObject.a to a, etc.
 // console.log(a); //=> 1
 // console.log(b); //=> 2;
 // console.log(c); //=> 3;
 
+// //order doesn't matter with objects
+// let {c, b, a} = myObject;
+// console.log(myObject)
+// console.log(a); //=> 1
+// console.log(b); //=> 2;
+// console.log(c); 
 
-// // let {a, b, f} = myObject;
+// //=> 3;
+// // only the keys we include get assigned, the others get ignored
+// const {a, c} = myObject;
+// console.log('a', a);
+// console.log('c', c);
 
 
-// //an example person objbect
+
+//an example person object
 // const person = {name: 'Ada', height: 64, weight: 135}
 
 // // expects a person object
@@ -62,10 +75,10 @@ const data = {value: 'index'};
 //     return 703*weight/(height*height);
 // }
 
-// // //a function that expects a person object
-// // function getBMI({height, weight}) {
-// //     return 703*weight/(height*height);
-// // }
+// //a function that expects a person object
+// function getBMI({height, weight}) {
+//     return 703*weight/(height*height);
+// }
 
 // const adaBMI = getBMI(person);
 // console.log(adaBMI);
@@ -73,7 +86,7 @@ const data = {value: 'index'};
 
 // // implicit destructured
 
-// //spread operator example
+//spread operator example
 // const person = {name: 'Ada', height: 64, weight: 135}
 // const person2 = person;
 
@@ -87,8 +100,9 @@ const data = {value: 'index'};
 // console.log(person3);
 // person3.name = 'Ada3';
 // console.log (person);
-// console.log(person2);
+// // console.log(person2);
 // console.log(person3);
+// console.log (person);
 
 // const person4 = {...person, hat: 'bowler'};
 // console.log(person4);
@@ -107,10 +121,14 @@ const data = {value: 'index'};
 // trueClone = {...original, c: [...original.c]}
 
 
-import {foo, bar} from './other.js';
-console.log(foo);
-console.log(bar);
+// import {foo, bar} from './other.js';
+// console.log(foo);
+// console.log(foo());
+// console.log(bar);
 
+
+// import {peopleArray} from './other.js';
+// console.log(peopleArray);
 
 //pre-written messages
 let MESSAGES = ['Hello world!', "Goodbye y'all", "silence", "...", "Bueller?"];
