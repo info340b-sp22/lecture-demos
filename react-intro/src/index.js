@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-// // Example 1
-// // message to show
+// //  Example 1
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// let message = React.createElement(
+// let msgElem = React.createElement(
 //     'h1',                    //html tag
 //     {                        //object of attributes
 //        id        : 'hello',
@@ -14,100 +14,202 @@ import ReactDOM from 'react-dom';
 //     'Hello World!'           //content
 //  ); 
 
-//  //show the content in the web page (inside #root)
-//  ReactDOM.render(message, document.getElementById('root'));
+// root.render(msgElem);
+
+
+
+
 
 // // Example 1a
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// let header = <header className="jumbotron"><h1>Hello JSX</h1></header>;
+// root.render(header);
 
-// let message = <h1>Hello <em>World</em></h1>;
-
-// ReactDOM.render(message, document.getElementById('root'));
 
 
 
 // // Example 2
+//inside index.js
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-// // here we make it a little more complicated by adding a class and embedding
-// // the h1 inside a header element
-// let header = <header className="jumbotron"><h1>Hello JSX</h1></header>;
-// ReactDOM.render(header, document.getElementById('root'));
-
-
-
-
-// // Example 3
-// // how we can do include inline expressions using the {}
 // let title = "Hello JSX as a String";
 
 // let header = (
-//     <header className="jumbotron">
-//         <h1>{title}</h1>
-//         <p>{1 + 1}</p>
-//         <p>"hello world".toUpperCase()</p>
-//         <p>{"hello world".toUpperCase()}</p>
-//     </header>
+//             <header className="jumbotron">
+//               <h1>{title}</h1>
+//               <p>{1+1}</p>
+//               <p>"hello world".toUpperCase()</p>
+//               <p>{"hello world".toUpperCase()}</p>
+//             </header>
 // );
-// ReactDOM.render(header, document.getElementById('root'));
+// root.render(header);
 
+// // Example 3
+// const msgElem = (
+//     
+//       <header className="bg-dark p-3">
+//         <h1 id="hello" className="text-light"> Hi Folks</h1>
+//       </header>
+//       <main>
+//         <p>This is a paragraph in my main section</p>
+//       </main>
+//     
+//   );
 
+// // Example 3a
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// const msgElem = (
+//   <div>
+//     <header className="bg-dark p-3">
+//       <h1 id="hello" className="text-light"> Hi Folks</h1>
+//     </header>
+//     <main>
+//       <p>This is a paragraph in my main section</p>
+//     </main>
+//   </div>
+// );
 
+// root.render(msgElem);
 
 // // Example 4
-
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 // function HelloMessage() {
 
-//        let message = "Hello World!";
+//        let message = "Hello Everyone!";
 //        return <h1>{message}</h1>;
 
 // }
 
-// let instance = <HelloMessage />;
-// ReactDOM.render(instance, document.getElementById('root'));
-
+// const instance = <HelloMessage />;
+// root.render(instance);
 
 
 // // Example 4a
-// // Use '(' and ')' to span lines example
 
 // function HelloMessage() {
-//    return (
-//       <div className="bg-dark text-white">
-//          <h1>Hello World</h1>
-//       </div> )
-
-// }
-
-// let instance = <HelloMessage />;
-// ReactDOM.render(instance, document.getElementById('root'));
-
-
-
+//     return <p>Hello World!</p>;
+//   }
+  
+//   function GoodbyeMessage() {
+//     return <p>See ya later!</p>;
+//   }
+  
+//   function MessageList() {
+//     return (
+//        <div>
+//           <HelloMessage /> {/* A HelloMessage component */}
+//            <GoodbyeMessage /> {/* A GoodbyeMessage component */}
+//        </div>
+//     );
+//   }
+//   const pageContent = (
+//     <div>
+//     <header className="bg-dark p-3">
+//          <h1 id="hello" className="text-light"> Hi Folks</h1>
+//        </header>
+//     <MessageList/>;
+//     </div>
+//   );
+//   const root = ReactDOM.createRoot(document.getElementById('root'));
+//   root.render(pageContent);
+  
+  
 // // Example 5
 
-// import { HelloMessage } from './App'
+// /*** in index.js ***/
+// import App from './App' //default import
 
-// ReactDOM.render(<HelloMessage />, document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(<App />)
+
+// //*** in App.js ***/
+// import { HelloMessage, MessageList } from './Messages'
+
+// //declare a function component
+// export default function App() {
+//   return (
+//     <MessageList /> 
+//   )
+// }
+
+// //*** in Messages.js ***/
+// function HelloMessage() {
+//     return <p>Hello World!</p>;
+//   }
+  
+//   function GoodbyeMessage() {
+//     return <p>See ya later!</p>;
+//   }
+  
+//   export function MessageList() {
+//     return (
+//        <div>
+//           <HelloMessage /> {/* A HelloMessage component */}
+//            <GoodbyeMessage /> {/* A GoodbyeMessage component */}
+//        </div>
+//     );
+//   }
+//   const pageContent = (
+//     <div>
+//     <header className="bg-dark p-3">
+//          <h1 id="hello" className="text-light"> Hi Folks</h1>
+//        </header>
+//     <MessageList/>;
+//     </div>
+//   );
 
 
+// // Props example in Messages 
+// function HelloMessage(props) {
+//     let propsMessage = props.message;
+//     if(props.makeItKnown){
+//       propsMessage = propsMessage.toUpperCase();
+//     }
+//     return <p>{propsMessage}</p>;
+//   }
+  
+//   function GoodbyeMessage() {
+//     return <p>See ya later!</p>;
+//   }
+  
+//   export function MessageList() {
+//     return (
+//        <div>
+//           <HelloMessage message="hey there hello message" makeItKnown={true}/> {/* A HelloMessage component */}
+//           <HelloMessage message="Another Message" makeItKnown={false}/> {/* A HelloMessage component */}
+//            <GoodbyeMessage /> {/* A GoodbyeMessage component */}
+//        </div>
+//     );
+//   }
+//   const pageContent = (
+//     <div>
+//     <header className="bg-dark p-3">
+//          <h1 id="hello" className="text-light"> Hi Folks</h1>
+//        </header>
+//     <MessageList/>;
+//     </div>
+//   );
 
-
-// // Example 6
-
-// import App from './App'
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-
-
-// // Example 7 and 8
-// import App from './App'
-// import './style.css'
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-
-
-
-// //Example 9
-
-// import App from './App'
-//  ReactDOM.render(<App />, document.getElementById('root'));
+// // Props with an array and map (transform) example
+// function MessageItem(props) {
+//     let propsMessage = props.message;
+    
+//     return <p>{propsMessage}</p>;
+//   }
+  
+//   export function MessageList(props) {
+//     console.log(props);
+  
+//     const msgComponents = props.messages.map((msgStr) => {
+//       const elem = <MessageItem message={msgStr} key={msgStr} />; //pass prop down!
+//       return elem
+//     })
+    
+  
+//     return (
+//       <div>
+//         {msgComponents}
+//       </div>
+//     );
+//   }
+  
