@@ -1,49 +1,49 @@
 [
   {
-      "userId": "penguin",
-      "userName": "Penguin",
-      "userImg": "/img/Penguin.png",
-      "text": "It's so cold out today!",
+      "userId": "bobo",
+      "userName": "Bobl",
+      "userImg": "/img/monkey.jpg",
+      "text": "I love bananas!",
       "timestamp": 1320161040000,
       "channel": "general"
   },
   {
-      "userId": "parrot",
-      "userName": "Parrot",
-      "userImg": "/img/Parrot.png",
-      "text": "It's warm over here",
+      "userId": "zoro",
+      "userName": "Zoro",
+      "userImg": "/img/zebra.jpg",
+      "text": "I'm striped!",
       "timestamp": 1320161760000,
       "channel": "general"
   },
   {
-      "userId": "eagle",
-      "userName": "Eagle",
-      "userImg": "/img/Eagle.png",
-      "text": "Lucky duck",
+      "userId": "george",
+      "userName": "George",
+      "userImg": "/img/monkey.jpg",
+      "text": "I'm curious",
       "timestamp": 1320162060000,
       "channel": "general"
   },
   {
-      "userId": "parrot",
-      "userName": "Parrot",
-      "userImg": "/img/Parrot.png",
+      "userId": "todd",
+      "userName": "Todd",
+      "userImg": "/img/bigears.jpg",
       "text": "I'm not a duck!",
       "timestamp": 1320162120000,
       "channel": "general"
   },
   {
-      "userId": "zebra",
-      "userName": "Zebra",
-      "userImg": "/img/Zebra.png",
-      "text": "Wassup! It's me y'all",
+      "userId": "rocky",
+      "userName": "Rocky",
+      "userImg": "/img/squirrel.jpg",
+      "text": "I can fly!",
       "timestamp": 1320224280000,
       "channel": "random"
   },
   {
-      "userId": "owl",
-      "userName": "Owl",
-      "userImg": "/img/Owl.png",
-      "text": "Who?",
+      "userId": "joe",
+      "userName": "Joe",
+      "userImg": "/img/monkey.jpg",
+      "text": "I am mighty",
       "timestamp": 1320224640000,
       "channel": "random"
   }
