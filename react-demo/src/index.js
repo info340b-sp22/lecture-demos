@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+<<<<<<< HEAD
 import './index.css';
 import App from './App';
 
@@ -16,6 +17,38 @@ import 'bootstrap/dist/css/bootstrap.css';
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
 // //  Example 1
+=======
+import 'bootstrap/dist/css/bootstrap.css';
+import './index.css';
+// import App from './App';
+
+// const msgElem = <h1 >Hello World</h1>;
+
+
+
+// let title = "Hello JSX as a String";
+
+// let header = (
+//             <header className="jumbotron">
+//               <h1>{title}</h1>
+//               <p>{1+1}</p>
+//               <p>"hello world".toUpperCase()</p>
+//               <p>{"hello world".toUpperCase()}</p>
+//             </header>
+// );
+// const msgElem = (
+//   <div>
+//     <header className="bg-dark p-3">
+//       <h1 id="hello" className="text-light"> Hi Folks</h1>
+//     </header>
+//     <main>
+//       <p>This is a paragraph in my main section</p>
+//     </main>
+//   </div>
+// );
+
+//  Example 1
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // let msgElem = React.createElement(
@@ -31,6 +64,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 // // Example 1a
 // const root = ReactDOM.createRoot(document.getElementById('root'));
+<<<<<<< HEAD
 
 // let header = (<header className="jumbotron">
 //                 <h1>Hello JSX</h1>
@@ -40,6 +74,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 // root.render(header);
 
+=======
+// let header = <header className="jumbotron"><h1>Hello JSX</h1></header>;
+// root.render(header);
+
+
+// root.render(msgElem);
+
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 // //Example 2
 // //inside index.js
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -59,14 +101,22 @@ import 'bootstrap/dist/css/bootstrap.css';
 // // Example 3
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // const msgElem = (
+<<<<<<< HEAD
 //   <section>
+=======
+  
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 //     <header className="bg-dark p-3">
 //       <h1 id="hello" className="text-light"> Hi Folks</h1>
 //     </header>
 //     <main>
 //       <p>This is a paragraph in my main section</p>
 //     </main>
+<<<<<<< HEAD
 //     </section>
+=======
+
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 // );
 
 // root.render(msgElem);
@@ -98,7 +148,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 // const instance = <HelloMessage />;
 // root.render(instance);
 
+<<<<<<< HEAD
 // // Example 4a
+=======
+// Example 4a
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 
 // function HelloMessage() {
 //   return <p>Hello World!</p>;
@@ -127,6 +181,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(pageContent);
 
+<<<<<<< HEAD
 /*** index.js ***/
 
 // import App from './App' //default import
@@ -136,6 +191,8 @@ root.render(<App />)
 
 
 
+=======
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
 // import { HelloMessage } from './App'
 
 // const pageContent = (
@@ -149,8 +206,16 @@ root.render(<App />)
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(pageContent);
 
+<<<<<<< HEAD
 // /*** in index.js ***/
 // import App from './components/App' //default import
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<App />)
+=======
+/*** in index.js ***/
+import App from './components/App' //default import
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />)
+>>>>>>> db774e6b77f9e6519159892c07800946eabbf1d5
