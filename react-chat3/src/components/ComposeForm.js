@@ -5,13 +5,16 @@ export default function ComposeForm(props) {
   const [textValue, setTextValue] = useState("");
 
   const handleChange = (event) => {
+    // console.log(event.target.value);
     const typedValue = event.target.value;
     setTextValue(typedValue);
-  } 
+  }
 
 const handleSubmit = (event) => {
   event.preventDefault();
+  
   setTextValue('');
+
   props.whatToDoWhenSubmitted("Monkey", "Monkey", textValue, "general");
   
 }
@@ -29,4 +32,5 @@ const handleSubmit = (event) => {
       </div>
     </form>
   );
+
 }

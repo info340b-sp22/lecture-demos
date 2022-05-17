@@ -6,13 +6,14 @@ import ChannelList from './ChannelList';
 import MessagePane from './MessagePane';
 import ComposeForm from './ComposeForm';
 
-import CHAT_LOG from '../data/chat_log.json';                       
+import CHAT_LOG from '../data/chat_log.json';                       // Example 6: moved from state up from messages
 
 function App(props) {
 
-  const [messagesArray, setMessagesArray] = useState(CHAT_LOG);      
+  const [messagesArray, setMessagesArray] = useState(CHAT_LOG);       // Example 6: moved from state up from messages
 
-const addMessage = (userId, userName, messageText, channel) => {     
+//add new message
+const addMessage = (userId, userName, messageText, channel) => {       //Example 6 moves to app to elevate state
 
   const newMessage = {
     userId: userId,
@@ -44,10 +45,10 @@ const addMessage = (userId, userName, messageText, channel) => {
         </div>
         <main className="col d-flex flex-column chat-column">
           <div className="chat-pane">
-            <MessagePane messagesArray={messagesArray} channel={currentChannel} />   
+            <MessagePane messagesArray={messagesArray} channel={currentChannel} />      {/*Example 6 */}
           </div>
         </main>
-        <ComposeForm whatToDoWhenSubmitted={addMessage} />                           
+        <ComposeForm whatToDoWhenSubmitted={addMessage} />                            {/*Example 6 */}
       </div>
     </div>
   );
