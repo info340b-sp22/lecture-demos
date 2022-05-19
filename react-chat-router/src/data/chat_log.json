@@ -1,0 +1,50 @@
+[
+  {
+      "userId": "bobo",
+      "userName": "Bobl",
+      "userImg": "/img/monkey.jpg",
+      "text": "I love bananas!",
+      "timestamp": 1320161040000,
+      "channel": "general"
+  },
+  {
+      "userId": "zoro",
+      "userName": "Zoro",
+      "userImg": "/img/zebra.jpg",
+      "text": "I'm striped!",
+      "timestamp": 1320161760000,
+      "channel": "general"
+  },
+  {
+      "userId": "george",
+      "userName": "George",
+      "userImg": "/img/monkey.jpg",
+      "text": "I'm curious",
+      "timestamp": 1320162060000,
+      "channel": "general"
+  },
+  {
+      "userId": "todd",
+      "userName": "Todd",
+      "userImg": "/img/bigears.jpg",
+      "text": "I'm not a duck!",
+      "timestamp": 1320162120000,
+      "channel": "general"
+  },
+  {
+      "userId": "rocky",
+      "userName": "Rocky",
+      "userImg": "/img/squirrel.jpg",
+      "text": "I can fly!",
+      "timestamp": 1320224280000,
+      "channel": "random"
+  },
+  {
+      "userId": "joe",
+      "userName": "Joe",
+      "userImg": "/img/monkey.jpg",
+      "text": "I am mighty",
+      "timestamp": 1320224640000,
+      "channel": "random"
+  }
+]
