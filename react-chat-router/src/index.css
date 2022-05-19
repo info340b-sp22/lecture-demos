@@ -10,6 +10,12 @@ body,
   top: 4px;
 }
 
+/*** Channel List ***/
+.channel-list a {
+  color: white;
+}
+
+
 /*** Message Pane ***/
 
 .chat-pane {
@@ -43,31 +49,47 @@ body,
 .like-button {
   padding: 0;
 }
+
 .like-button .material-icons {
-  position:relative;
-  top:0px;
+  position: relative;
+  top: 0px;
 }
 
 
 /*** ComposeForm ***/
 textarea {
-    resize:none
+  resize: none
 }
 
-button img {
+
+/*** Header ***/
+header img {
+  width: 40px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: .5em;
+}
+
+header button.user-icon {
+  padding: .25rem;
 }
 
 .highlighted {
   border: 3px solid greenyellow;
 }
 
+.bg-primary .nav-link {
+  color: white;
+}
+
+.bg-primary .nav-pills .nav-link.active {
+  color: #0d6efd;
+  background-color: white;
+}
+
+header .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 .lead img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: .5em;
+  width: 100px;
 }

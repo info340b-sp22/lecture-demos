@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function MessagePane(props) {
   const currentChannel = props.channel;
 
-  const messageArray = props.messageArray;
+  const messagesArray = props.messagesArray;
 
   const [clickCount, setClickCount] = useState(props.initialCount);
 
@@ -14,7 +14,7 @@ export default function MessagePane(props) {
   }
 
   //only show current channel messages. This is an array of objects at this point
-  const channelMessages = messageArray.filter((messageObj) => {
+  const channelMessages = messagesArray.filter((messageObj) => {
     return messageObj.channel == currentChannel;
   })
 
