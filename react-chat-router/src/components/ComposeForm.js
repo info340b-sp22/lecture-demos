@@ -1,4 +1,6 @@
 
+
+// Example 4
 import React, { useState } from 'react';
 
 export default function ComposeForm(props) {
@@ -30,7 +32,7 @@ export default function ComposeForm(props) {
     <form className="my-2" onSubmit={handleSubmit}>
       <div className="input-group">
 
-        {currentUser.userName && <img src={'img/' + currentUser.userName + '.jpg'} alt={currentUser.userName + "avatar"} />}
+        {currentUser.userName && <img src={'/img/' + currentUser.userName + '.jpg'} alt={currentUser.userName + "avatar"} />}   {/* Example 4*/}
 
         <textarea className="form-control" rows="2" placeholder="Type a new message"
           value={textValue}

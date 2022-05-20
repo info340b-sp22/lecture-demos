@@ -1,3 +1,5 @@
+
+//Example 4
 import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -27,7 +29,7 @@ export default function SignInPage(props) {
     return (
       <Dropdown.Item className={classList} key={userName}
         name={userName} onClick={handleClick} >
-        <img src={'img/' + userName + '.jpg'} alt={userName + " avatar"} />
+        <img src={'/img/' + userName + '.jpg'} alt={userName + " avatar"} />
         &nbsp; {userName || "Log out"}
       </Dropdown.Item>
     )
@@ -39,7 +41,7 @@ export default function SignInPage(props) {
         <div className="lead">Pick a user:
           <Dropdown>
             <Dropdown.Toggle variant="light">
-              <img src={'img/' + currentUser.userName + '.jpg'} alt={currentUser.userName + ' avatar'} />
+              <img src={'/img/' + currentUser.userName + '.jpg'} alt={currentUser.userName + ' avatar'} />
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
