@@ -1,20 +1,16 @@
 
 import React, {useEffect, useState} from 'react';
-
 import HeaderBar from './HeaderBar';
 import ChatPage from './ChatPage';
 import SignInPage from './SignInPage';
 import * as Static from './StaticPages';
-
 import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
-
 
 function App(props) {
   const initialUser = {userId:null, userName:null}
   const [currentUser, setCurrentUser] = useState(initialUser);
   const navigateTo = useNavigate(); //for redirecting
-  //console.log("rendering App with", currentUser);
-
+  
   //effect to run when the component first loads
   useEffect(() => {
     //log in a default user
