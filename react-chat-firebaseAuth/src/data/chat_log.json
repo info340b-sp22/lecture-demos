@@ -1,0 +1,34 @@
+[
+  {
+      "userId": "monkey",
+      "userName": "Monkey",
+      "userImg": "/img/monkey.jpg",
+      "text": "I love bananas!",
+      "timestamp": 1320161040000,
+      "channel": "general"
+  },
+  {
+      "userId": "zebra",
+      "userName": "Zebra",
+      "userImg": "/img/zebra.jpg",
+      "text": "I'm striped!",
+      "timestamp": 1320161760000,
+      "channel": "general"
+  },
+  {
+      "userId": "bigears",
+      "userName": "Bigears",
+      "userImg": "/img/bigears.jpg",
+      "text": "I'm not a duck!",
+      "timestamp": 1320162120000,
+      "channel": "general"
+  },
+  {
+      "userId": "squirrel",
+      "userName": "Squirrel",
+      "userImg": "/img/squirrel.jpg",
+      "text": "I can fly!",
+      "timestamp": 1320224280000,
+      "channel": "random"
+  }
+]
